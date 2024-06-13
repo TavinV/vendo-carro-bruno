@@ -50,31 +50,19 @@
             <div class="card">
                 <img class="card-img" src="img/PS6.png" alt="">
                 <h2>Playstation 6</h2>
-                <button>Receber meu prémio</button>
+                <button onclick="play6()">Receber meu prémio</button>
             </div>
             
             <div class="card">
                 <img class="card-img" src="img/daniel fraga.jpg" alt="">
                 <h2>Paradeiro de Daniel Fraga</h2>
-                <button>Receber meu prémio</button>
+                <button onclick="danielfraga()">Receber meu prémio</button>
             </div>
-            
-            <div class="card">
-                <img class="card-img" src="img/gemas.webp" alt="">
-                <h2>Gerador de gemas do Clash Royale</h2>
-                <button>Receber meu prémio</button>
-            </div>
-            
-            <div class="card">
-                <img class="card-img" src="img/habeas corpus.jpg" alt="">
-                <h2>Habeas Corpus</h2>
-                <button>Receber meu prémio</button>
-            </div>
-            
+                        
             <div class="card">
                 <img class="card-img" src="img/carro brunao.jpeg" alt="">
                 <h2>HB20 - 2017 <span class="destaque"> (talvez seja do Brunão!)</span></h2>
-                <button>Receber meu prémio</button>
+                <button onclick="carrodobruno()">Receber meu prémio</button>
             </div>
         </div>
     </main>
@@ -111,6 +99,38 @@
                 text: "Polonia sem o Leon é muito fraca",
               });
         }
+
+        function play6() {
+            Swal.fire({
+                icon: "warning",
+                title: "Esse roda Whatsapp",
+              });
+        }
+        function danielfraga() {
+            Swal.fire({
+                icon: "warning",
+                title: "Ele ta no rio acima",
+                text: "Comendo siriema",
+              });
+        }
+
+        function carrodobruno(){
+            Swal.fire({
+                title: "Eu nem tenho certeza se esse carro é dele, quer comprar mesmo?",
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: "QUERO!",
+                denyButtonText: `Quero não`
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  Swal.fire("Está a caminho! Chegará hoje a tarde!", "", "success");
+                } else if (result.isDenied) {
+                  Swal.fire("Meteu o louco", "", "info");
+                }
+              });
+        }
     </script>
     </body>
+    </html>
     </html>
