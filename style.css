@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --branco: #FFFF;
+    --preto: #0A0A23;
+    --vermelho: #FF6666;
+    --amarelo: #ffd700;
+    --cinza: #e4e4e4;
+    --roxo: #645394;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+    transition: all .3s ease;
+    color: var(--preto);
+}
+
+
+
+header {
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header > h1 {
+    font-size: 2vw;
+    color: var(--branco);
+}
+
+.sub-header {
+    width: 100vw;
+    height: 3vh;
+    background-color: var(--amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header > h2 {
+    font-size: 0.6vw;   
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.descontos-container {
+    width: 90vw;
+    height: 110vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+.descontos-container::-webkit-scrollbar{
+    display: none;
+}
+
+/* Cards */
+
+.card {
+    width: 22vw;
+    height: 35vh;
+    border: solid 5px var(--cinza);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card > h2 {
+    font-size: 1vw;
+}
+
+.card-img {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    position: relative;
+    top: -2%;
+}
+
+.card-img_tiger {
+    width: 17vw;
+    height: 20vh;
+    border-radius: 10px;
+    position: relative;
+    top: -2%; 
+}
+
+.card > button {
+    margin-top: 5%;
+    background-color: var(--roxo);
+    width: 60%;
+    height: 15%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--branco);
+}
+
+.card > button:hover {
+    scale: 1.05;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
+.itlc {
+    font-style: italic;
+}
+
+.destaque {
+    color: var(--vermelho);
+}
