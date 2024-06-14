@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
+
 <body>
     <header>
         <h1>
-            Presentinhos 
+            Presentinhos
         </h1>
     </header>
     <div class="sub-header">
@@ -28,37 +30,37 @@
                 <h2>2 anos de isenção de imposto</h2>
                 <button onclick="leao()">Receber meu prémio</button>
             </div>
-            
+
             <div class="card">
-                <img class="card-img_tiger" src="img/V1JRyHrReJaYJK.jpg" alt="">
+                <img class="card-img    " src="img/V1JRyHrReJaYJK.jpg" alt="">
                 <h2>Saldo de R$ 420,69 no <span class="itlc">Fortune Tiger</span></h2>
                 <button onclick="tigre()">Receber meu prémio</button>
             </div>
-            
+
             <div class="card">
                 <img class="card-img" src="img/memoria ram.jpg" alt="">
                 <h2>Memória Ram pronta para o download</h2>
                 <button onclick="memoriaram()">Receber meu prémio</button>
             </div>
-            
+
             <div class="card">
                 <img class="card-img" src="img/vnl masc.webp" alt="">
                 <h2>Resultados da VNL Masculina (2026)</h2>
                 <button onclick="vnlmasc()">Receber meu prémio</button>
             </div>
-            
+
             <div class="card">
                 <img class="card-img" src="img/PS6.png" alt="">
                 <h2>Playstation 6</h2>
                 <button onclick="play6()">Receber meu prémio</button>
             </div>
-            
+
             <div class="card">
                 <img class="card-img" src="img/daniel fraga.jpg" alt="">
                 <h2>Paradeiro de Daniel Fraga</h2>
                 <button onclick="danielfraga()">Receber meu prémio</button>
             </div>
-                        
+
             <div class="card">
                 <img class="card-img" src="img/carro brunao.jpeg" alt="">
                 <h2>HB20 - 2017 <span class="destaque"> (talvez seja do Brunão!)</span></h2>
@@ -66,14 +68,14 @@
             </div>
         </div>
     </main>
-    
+
     <script>
         function leao() {
             Swal.fire({
                 icon: "warning",
                 title: "Quer mesmo sonegar imposto?",
                 text: "Acho que é ilegal...",
-              });
+            });
         }
 
         function tigre() {
@@ -81,7 +83,7 @@
                 icon: "warning",
                 title: "Cuidado com o tigre maldito!",
                 text: "Ele só ameaça, mas nunca solta a cartinha",
-              });
+            });
         }
 
         function memoriaram() {
@@ -89,7 +91,7 @@
                 icon: "warning",
                 title: "Baixando memória RAM!",
                 text: "Quer aproveitar e baixar mais tinta para impressora?",
-              });
+            });
         }
 
         function vnlmasc() {
@@ -97,40 +99,42 @@
                 icon: "warning",
                 title: "Brasil campeão 🏆",
                 text: "Polonia sem o Leon é muito fraca",
-              });
+            });
         }
 
         function play6() {
             Swal.fire({
                 icon: "warning",
                 title: "Esse roda Whatsapp",
-              });
+            });
         }
         function danielfraga() {
             Swal.fire({
                 icon: "warning",
                 title: "Ele ta no rio acima",
                 text: "Comendo siriema",
-              });
+            });
         }
 
-        function carrodobruno(){
+        function carrodobruno() {
             Swal.fire({
                 title: "Eu nem tenho certeza se esse carro é dele, quer comprar mesmo?",
                 showDenyButton: true,
                 showCancelButton: true,
                 confirmButtonText: "QUERO!",
                 denyButtonText: `Quero não`
-              }).then((result) => {
+            }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                  Swal.fire("Está a caminho! Chegará hoje a tarde!", "", "success");
+                    Swal.fire("Está a caminho! Chegará hoje a tarde!", "", "success");
                 } else if (result.isDenied) {
-                  Swal.fire("Meteu o louco", "", "info");
+                    Swal.fire("Meteu o louco", "", "info");
                 }
-              });
+            });
         }
     </script>
-    </body>
-    </html>
-    </html>
+</body>
+
+</html>
+
+</html>
